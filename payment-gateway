@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <form>
+        <label for="payment-method">Payment Method:</label><br>
+        <select id="payment-method" name="payment-method">
+            <option value="gcash">GCash</option>
+            <option value="maya">Maya</option>
+            <option value="grabpay">GrabPay</option>
+            <option value="unionbank">UnionBank</option>
+            <option value="bpi">BPI</option>
+            <option value="visa">VISA</option>
+            <option value="mastercard">Mastercard</option>
+        </select><br>
+        <input type="submit" value="Pay">
+    </form>
+</body>
+</html>

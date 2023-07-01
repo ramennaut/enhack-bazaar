@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete Bazaar Shop</title>
+    <style>
+        .product {
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Complete Bazaar Shop</h1>
+    <form>
+        <label for="shop">Shop:</label>
+        <select id="shop" name="shop">
+            <!-- Options for shops -->
+        </select>
+        <label for="item-type">Item Type:</label>
+        <select id="item-type" name="item-type">
+            <!-- Options for item types -->
+        </select>
+        <label for="price">Price:</label>
+        <select id="price" name="price">
+            <!-- Options for price ranges -->
+        </select>
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating">
+            <!-- Options for ratings -->
+        </select>
+        <input type="submit" value="Filter">
+    </form>
+    <div class="product">
+        <h2>Product Name</h2>
+        <p>Product Description</p>
+        <p>Price: $00.00</p>
+    </div>
+    <!-- Repeat the above div for each product -->
+    <h1>Main Marketplace</h1>
+    <div class="seller">
+        <h2>Seller Name</h2>
+        <p>Seller Description</p>
+        <div class="featured-items">
+            <div class="item">
+                <h3>Item Name</h3>
+                <p>Item Description</p>
+            </div>
+            <div class="item">
+                <h3>Item Name</h3>
+                <p>Item Description</p>
+            </div>
+            <div class="item">
+                <h3>Item Name</h3>
+                <p>Item Description</p>
+            </div>
+        </div>
+    </div>
+    <!-- Repeat the above div for each seller -->
+</body>
+</html>
