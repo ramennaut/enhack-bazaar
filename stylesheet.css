@@ -2,16 +2,13 @@ iframe {
     border: none;
 }
 
-.seller {
-    border: 1px solid #000;
-    margin: 10px;
-    padding: 10px;
-}
-.featured-items {
+/* Product Grid */
+
+.grid-list {
     display: flex;
     justify-content: space-between;
 }
-.item {
+.grid-item {
     border: 1px solid #000;
     margin: 10px;
     padding: 10px;

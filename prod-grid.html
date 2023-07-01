@@ -1,61 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <title>Complete Bazaar Shop</title>
-    <style>
-        .product {
-            border: 1px solid #000;
-            margin: 10px;
-            padding: 10px;
-        }
-    </style>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" context="width=device-width, initial-scale=1"/>
+    <meta name="description" content="SITE_DESCRIPTION"/> <!-- Change description of website -->
+    <meta name="keywords" content="ADD_KEYWORDS"/> <!-- Change keywords and separate by comma -->
+    <meta name="robots" content="index, nofollow"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/> 
+    <title>SITE_TITLE | Products</title> <!-- Change the name based on branding -->
 </head>
 <body>
-    <h1>Complete Bazaar Shop</h1>
-    <form>
-        <label for="shop">Shop:</label>
-        <select id="shop" name="shop">
-            <!-- Options for shops -->
-        </select>
-        <label for="item-type">Item Type:</label>
-        <select id="item-type" name="item-type">
-            <!-- Options for item types -->
-        </select>
-        <label for="price">Price:</label>
-        <select id="price" name="price">
-            <!-- Options for price ranges -->
-        </select>
-        <label for="rating">Rating:</label>
-        <select id="rating" name="rating">
-            <!-- Options for ratings -->
-        </select>
-        <input type="submit" value="Filter">
-    </form>
-    <div class="product">
-        <h2>Product Name</h2>
-        <p>Product Description</p>
-        <p>Price: $00.00</p>
+    <h1>All Products</h1>
+    <!-- Filter Feature -->
+    <!-- Develop this feature using JS -->
+    <div>
+        <form>
+            <label for="shop-list">Shop:</label>
+            <select id="shop-list" name="shop-list">
+                <!-- Options for item types -->
+            </select>
+            <label for="item-type">Item Type:</label>
+            <select id="item-type" name="item-type">
+                <!-- Options for item types -->
+            </select>
+            <label for="sort-price">Sort by price:</label>
+            <select id="sort-price" name="sort-price">
+                <option value="">Select an option</option>
+                <option value="lh-price">Lowest price to highest price</option>
+                <option value="hl-price">Highest price to lowest price</option>
+            </select>
+            <label for="sort-sales">Sort by popularity:</label>
+            <select id="sort-sales" name="sort-sales">
+                <option value="">Select an option</option>
+                <option value="hl-sales">Highest sales to lowest sales</option>
+                <option value="lh-sales">Lowest sales to highest sales</option>
+            </select>
+            <label for="sort-rating">Sort by popularity:</label>
+            <select id="sort-rating" name="sort-rating">
+                <option value="">Select an option</option>
+                <option value="hl-rating">Highest rated to lowest rated</option>
+                <option value="lh-rating">Lowest rated to highest rated</option>
+            </select>
+            <input type="submit" value="Filter">
+        </form>
     </div>
-    <!-- Repeat the above div for each product -->
-    <h1>Main Marketplace</h1>
-    <div class="seller">
-        <h2>Seller Name</h2>
-        <p>Seller Description</p>
-        <div class="featured-items">
-            <div class="item">
-                <h3>Item Name</h3>
-                <p>Item Description</p>
-            </div>
-            <div class="item">
-                <h3>Item Name</h3>
-                <p>Item Description</p>
-            </div>
-            <div class="item">
-                <h3>Item Name</h3>
-                <p>Item Description</p>
-            </div>
+    <!-- Product Grid -->
+    <div class="grid-list">
+        <div class="grid-item">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <p>Price</p>
+        </div>
+        <div class="grid-item">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <p>Price</p>
+        </div>
+        <div class="grid-item">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <p>Price</p>
         </div>
     </div>
-    <!-- Repeat the above div for each seller -->
 </body>
 </html>
