@@ -31,6 +31,16 @@ nav li {
   margin-bottom: 20px;
 }
 
+/* Index Page */
+
+.seller-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+
+}
+
 /* Product Grid */
 
 .grid-list {
@@ -49,3 +59,4 @@ nav li {
 .grid-item:hover {
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
+
