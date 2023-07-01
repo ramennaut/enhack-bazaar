@@ -5,8 +5,8 @@
   --black: #1c2b2d;
   --blue: #31326f;
   --light-blue: #005490;
-  --color-primary: #3864c1;
-  --color-sec: #9e7cb0;
+  --color-primary: #21335b;
+  --color-sec: #46a9de;
   --grey: #eee;
   --dark-grey: #222831;
 }
@@ -72,8 +72,12 @@ form input {
   text-decoration: none;
   color: var(--white);
   background-color: var(--color-sec);
-  padding: 5px;
-  border-radius: 5px;
+  margin: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
 }
 
 .active {
@@ -114,7 +118,7 @@ form input {
 
 .product-details p span {
   text-decoration: line-through;
-  color: red;
+  color: rgb(255, 81, 81);
   font-weight: normal;
 }
 
@@ -137,6 +141,13 @@ form input {
   object-fit: cover;
 }
 
+.search-box {
+  padding: 1rem 0;
+}
+
+.sort-box {
+  padding: 1rem 0;
+}
 
 .no-result {
   display: none;
