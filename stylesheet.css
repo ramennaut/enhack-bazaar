@@ -1,81 +1,193 @@
-/* Fonts */
+/* FONTS */
 
-@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* Reset CSS */
+/* ICONS */
 
-html, body {
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* CSS RESET */
+
+* {
   margin: 0;
   padding: 0;
 }
 
-/* Global Styles */
+/* GLOBAL STYLES */
+
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #fdfdfd;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #fdfdfd;
+  text-align: justify;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-h1 {
-  font-family: 'Della Respira', cursive;;
+h1, h2, h3 {
+  font-family: 'Della Respira', cursive;
   margin-bottom: 20px;
   text-align: center;
+}
+
+button {
+  background-color: #15144a;
+  color: #fdfdfd;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;  
 }
 
 iframe {
     border: none;
 }
 
-/* Navigation Menu */
-nav {
-  position: sticky;
+/* HEADER */
+
+header {
+  position: fixed;
   top: 0;
-  background-color: #f5f5f5;
-  padding: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(21, 20, 74, 0.95), rgba(21, 20, 74, 0));
+  backdrop-filter: blur(1px);
+  padding: 5px 25px 0px;
 }
 
-nav ul {
+header ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav li {
+header li {
   margin-right: 10px;
 }
 
-nav a {
-  color: #333333;
+header a {
+  color: #fdfdfd;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
-  color: #8863ef;
+/* LANDING */
+
+.bg-landing {
+  background-color: #15144a;
+  background-image: linear-gradient(to bottom, rgba(21, 20, 74, 0.50), rgba(46, 172, 227, 1) 80%)
 }
 
-
-
-.feature {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  justify-items: stretch;
-  margin-bottom: 20px;
-  margin-top:20px;
-  padding: 10px;
+.banner {
+  background-size: cover;
+  background-position: center center;
+  height: 85vh;
+  width: 100vw;
+  background-attachment: fixed;
 }
 
-/* Index Page */
+.banner-left {
+  width: 60%;
+  float: left;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap:10px;
+  padding: 12% 85px 0px 0px;
+}
+
+.feature-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-right {
+  width: 40%;
+  float: right;
+}
+
+.banner-right h2 {
+  padding-top: 25%;
+  width: 75%;
+  font-size: 48px;
+  text-align: left;
+  line-height: 95%;
+}
+
+.banner-right h3 {
+  width: 75%;
+  font-size: 18px;
+  text-align: left;
+  line-height: 95%;
+}
+
+.banner-right p {
+  padding: 30px 0;
+  width: 75%;
+}
+
+.banner-right button {
+  width: 75%;
+}
 
 .seller-grid {
   display: flex;
@@ -84,6 +196,9 @@ nav a:hover {
   align-items: center;
   gap: 10px;
   padding: 5px;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 75px;
 }
 
 
