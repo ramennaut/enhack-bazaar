@@ -1,0 +1,52 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* CSS MODULES */
+@import './components/Header.css';
+@import './components/Banner.css';
+@import './components/SellerList.css';
+@import './components/ProductGrid.css';
+@import './components/Footer.css';
+
+
+/* GLOBAL STYLES */
+
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #fdfdfd;
+  text-align: justify;
+  background-color: #15144a;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Della Respira', cursive;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #15144a;
+  color: #fdfdfd;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
