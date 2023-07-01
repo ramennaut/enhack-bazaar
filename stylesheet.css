@@ -44,8 +44,28 @@ nav li {
 .feature {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  justify-items: stretch;
   margin-bottom: 20px;
+  margin-top:20px;
+  padding: 10px;
+}
+
+/* Index Page */
+
+.seller-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 
