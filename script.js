@@ -54,3 +54,4 @@ document.getElementById("filter-form").addEventListener("submit", function(event
 
 // Initial build of the product grid
 buildProductGrid();
+
