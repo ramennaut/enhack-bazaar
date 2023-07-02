@@ -1,4 +1,5 @@
 import React from 'react';
+import Cursor from './components/Cursor';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import SellerList from './components/SellerList';
@@ -9,11 +10,14 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Banner/>
-      <SellerList/>
-      <ProductGrid/>
-      <Footer/>
+      <Cursor/>
+      <main className="container mx-auto px-2 md:px-0">
+        <Header/>
+        <Banner/>
+        <SellerList/>
+        <ProductGrid/>
+        <Footer/>
+      </main>
     </div>
   );
 }
