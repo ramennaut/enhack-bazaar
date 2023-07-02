@@ -8,7 +8,8 @@ import item6 from '../assets/featured-item-6.jpg';
 import './Banner.css';
 
 function Banner() {
-  // Replace this with your actual data or fetch it from an API
+  // Ideally, this is fetched from a database feeding from seller input of starred items
+  // Finished MVP also changes this per day on rotation
   const featuredItems = [
     {
       id: 1,

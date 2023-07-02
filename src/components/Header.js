@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../assets/enstack-logo.png';
+import logo from '../assets/logo-nifty.png';
 import './Header.css';
 
 function Header({ cartCount, updateCartCount }) {

@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Cursor/>
-      <main className="container mx-auto px-2 md:px-0">
+      <main>
         <Header/>
         <Banner/>
         <SellerList/>
